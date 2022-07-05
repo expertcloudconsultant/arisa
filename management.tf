@@ -68,7 +68,7 @@ resource "azurerm_windows_virtual_machine_scale_set" "corporate-management-vm" {
   }
 
   network_interface {
-    name    = "corporate-management-vm-nic"
+    name    = "corporate-management-vmss-nic"
     primary = true
 
     ip_configuration {
