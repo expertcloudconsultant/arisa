@@ -79,3 +79,19 @@ resource "azurerm_windows_virtual_machine_scale_set" "corporate-management-vm" {
   }
 
 }
+
+
+# resource "azurerm_dev_test_global_vm_shutdown_schedule" "example" {
+#   virtual_machine_id = azurerm_virtual_machine.example.id
+#   location           = azurerm_resource_group.example.location
+#   enabled            = true
+
+#   daily_recurrence_time = "1100"
+#   timezone              = "Pacific Standard Time"
+
+#   notification_settings {
+#     enabled         = true
+#     time_in_minutes = "60"
+#     webhook_url     = "https://sample-webhook-url.example.com"
+#   }
+#}
